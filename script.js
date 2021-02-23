@@ -1,7 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-
+//Variable Declaration
 function generatePassword() {
   //var number=
   var number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -13,7 +13,7 @@ function generatePassword() {
   var special = ["!, @, #, $, %, &, ?"];
 
   var passwordLength = parseInt(prompt("How long should the password be?"))
-    console.log(passwordLength)
+    // console.log(passwordLength)
     
     
     if(passwordLength <= 7 || passwordLength >= 129 || isNaN(passwordLength)){
@@ -21,37 +21,37 @@ function generatePassword() {
       
       return
     }
-    
+    //Password parameters
     var specialCharacters = confirm("Do you want special characters?");
-    console.log(specialCharacters);
+    // console.log(specialCharacters);
 
     var lowercaseLetters = confirm("Do you want any lowercase letters?");
-    console.log(lowercaseLetters);
+    // console.log(lowercaseLetters);
 
     var uppercaseLetters = confirm("Do you want uppercase letters?");
-    console.log(uppercaseLetters);
+    // console.log(uppercaseLetters);
 
     var numericCharacters = confirm("Do you want numbers?");
-    console.log(numericCharacters);
-
+    // console.log(numericCharacters);
+        //if false
       if(specialCharacters === false && lowercaseLetters === false && uppercaseLetters === false && numericCharacters === false) {
         alert("You must pick at least one parameter");
 
       var specialCharacters = confirm("Do you want special characters?");
-      console.log(specialCharacters);
+    //   console.log(specialCharacters);
 
       var lowercaseLetters = confirm("Do you want any lowercase letters?");
-      console.log(lowercaseLetters);
+    //   console.log(lowercaseLetters);
 
       var uppercaseLetters = confirm("Do you want uppercase letters?");
-      console.log(uppercaseLetters);
+    //   console.log(uppercaseLetters);
 
       var numericCharacters = confirm("Do you want numbers?");
-      console.log(numericCharacters);
+    //   console.log(numericCharacters);
 
         return
       }
-
+    //Action for password
       var passwordCharacters = []
 
     if (specialCharacters) {
